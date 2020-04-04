@@ -6,6 +6,12 @@ body{
 
 }
 
+body.hideScroll{
+    overflow: hidden; /* tira as rolagens  */
+}
+
+
+
 
 
 a{
@@ -39,7 +45,7 @@ p,.description{
 
 #intro{
     width: 300px;
-    margin-right: 20px;
+    margin-right: 64px;
 
 }
 
@@ -55,6 +61,7 @@ main{
     justify-content: space-between;
     padding: 10px;
     margin-bottom: 32px;
+
  
 
 }
@@ -73,21 +80,25 @@ button{
 
 }
 
-button:hover{
+a:hover{
     text-decoration: underline;
 }
 
-button.fat:hover{
+.fat:hover{
     text-decoration: none;
+    background-color: #0994e3;
 }
 
-button.fat{
+.fat{
     background-color: #ff5e84;
     color: #fff;
     width: 150px;
     height: 40px;
     border-radius: 6px;
     box-shadow: 0px 8px 16px #ff5e8432;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -142,12 +153,19 @@ footer a{
     background-color: #ff5e84;
     position: absolute;
     top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
     
-    width: 100vw;
-    height: auto;
     
     display: flex;
     justify-content: center;
+    transition: 400ms;
+}
+
+#modal.addScroll{
+    overflow: auto;
 }
 
 #modal .content{
@@ -179,7 +197,9 @@ footer a{
 .content form div:nth-child(5){
     grid-column: span 2 ; 
   
+  
 }
+
 
 .input-wrapper{
 
@@ -204,6 +224,32 @@ form label{
     letter-spacing: 0.2px;
 }
 
+form a{
+     width: 150px;
+    height: 40px;
+    border-radius: 6px;
+
+
+    text-decoration: none;
+    background-color: #ffffff22;
+    color: #fff;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    transition: 400ms; 
+
+}
+
+form a:hover{
+    background-color: #fff;
+    color: #ff5e84;
+
+    text-decoration: none;
+  
+}
+
 form button{
     background-color: #fff;
     width: 150px ;
@@ -212,10 +258,11 @@ form button{
     border-radius: 6px;
 
     cursor: pointer;
-    margin: 32px 0;
 
     grid-column:2 ; /* Jogando elemento para coluna 2 */
     justify-self: end; /* posicionamento */
+
+    
 }
 
 form button:hover{
@@ -227,8 +274,99 @@ form button:hover{
 
 
 #modal.hide{
-    display: none;
+    opacity: 0;
+    visibility: hidden;
 }
 
 
+
+/* IDEIA.HTML */
+
+#page-ideas .container{
+    display: block;
+}
+#page-ideas header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-ideas nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#page-ideas nav li{
+    list-style-type: none;
+    margin-right: 16px;
+}
+
+#page-ideas nav li a{
+    color: #25282b;
+}
+
+#page-ideas nav li:last-child{
+    margin: 0;
+   
+ 
+}
+
+#page-ideas nav li:last-child a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+
+    width: 150px;
+    height: 40px;
+
+    background-color: #ff5e84;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+
+}
+
+#page-ideas nav li:last-child a:hover{
+    background-color:#0994e3;
+    text-decoration: none;
+}
+
+
+section#title{
+    text-align: center;
+  
+}
+
+
+section#title p{
+    opacity: 0.7;
+    margin: 0;
+}
+
+
+section#title h1{
+    margin: 0;
+    font-size: 28px;
+}
+
+
+section#ideas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+section#ideas .ideia{
+    margin: 0;
+}
+
+section#title,
+section#ideas,
+footer{
+    margin-top: 64px ;
+  
+}
 
