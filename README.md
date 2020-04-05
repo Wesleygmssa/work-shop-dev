@@ -17,13 +17,13 @@
 <p align="center">
     <br/>
   <br/>
-  <img src="page_inical.png" >
+  <img src="page_inicial.png" >
   <br/>
   <br/>
   <img src="page_ideias.png" >
   <br/>
   <br/>
-  <img src="cadastro_ieias.png" >
+  <img src="cadastro_ideias.png" >
   <br/>
   <br/>
 </p>
