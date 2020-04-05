@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block content%}
+
+<section id="intro">
+
+    <header>
+
+        <img src="logo.png" alt="casa criativa">
+
+    </header>
+
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet,<strong>consectetur adipisicing elit.
+                Cumque, maiores accusantium.</strong> Perspiciatis repellat omnis at vero reprehenderit dolore
+            excepturi
+        </p>
+
+
+        <p>
+            Lorem ipsum dolor <a href="">sit amet</a> , consectetur adipisicing elit Cumque,<a href="#">maiores
+                accusantium.</a>
+        </p>
+
+
+    </main>
+
+    <section id="buttons">
+        <button onclick="onOff()">+ Adicionar Ideia</button>
+        <a href="/ideias" class="fat"> Ver Ideias</a>
+    </section>
+
+    <footer>
+        Com ❤️ <a href="http://rocketseat.com.br" target="_blank">Rocketseat</a>
+    </footer>
+</section>
+
+<section class="last-ideias">
+
+    {% include "allIdeas.html" %}
+
+</section>
+
+{% endblock %}
