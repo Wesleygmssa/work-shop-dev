@@ -19,32 +19,7 @@ db.serialize(()=>{
     
     `)
 
-  {// inserir dados na tavela
-       /*  const query = `
-    INSERT INTO ideas(
-          image,
-          title,
-          category,
-          description,
-          link
-
-       ) VALUES (?,?,?,?,?);`
-
-        const values = [
-
-            "https://image.flaticon.com/icons/svg/2728/2728995.svg",
-            "Cursos de Programação",
-            "Estudo1",
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, sit ipsum modi cupiditate impedit repellat.Necessitatibus dolores inventore provident delectus dignissimos exercitationem ullam nostrum quae animi numquam, aliquid cupiditate voluptate?",
-            "https://rocketseat.com.br"
-
-        ]
-
-        db.run(query, values, function (err) {
-            if (err) return console.log(err)
-
-            console.log(this)
-        })/* Inserir dados na tabela */ 
+  {
   } 
    
 
