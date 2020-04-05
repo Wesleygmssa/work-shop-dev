@@ -5,8 +5,9 @@
 </h1>
 
 <h3 align="center">
-  Desafio: Gym Manager
+  WorkShopDev
 </h3>
+<p> Projeto criado com node.js, JavaScript, Nunjucks, Banco de dados: Sqlite.
 
 <blockquote align="center">“Sua única limitação é você mesmo”!</blockquote>
 
