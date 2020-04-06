@@ -15,15 +15,32 @@ db.serialize(()=>{
 
 
     );
-    
-    
-    `)
-
-  {
-  } 
-   
+ `)
 
 
+//  const query = `
+//  INSERT INTO ideas(
+
+//     image,
+//     title,
+//     category,
+//     description,
+//     link
+//  ) VALUES (?,?,?,?,?);
+//  `
+
+// const values = [
+//     "https:// teste",
+//     "Teste2",
+//     "Estudo",
+//     "Lorem ipson",
+//     "link"
+// ]
+
+// db.run(query,values,(err)=>{
+//     if(err) return console.log(err)
+//     console.log(this)
+// })
 
   //Deletar um dado da tabela // desafio
 
