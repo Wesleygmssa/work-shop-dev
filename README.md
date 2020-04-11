@@ -7,8 +7,10 @@
 <h3 align="center">
   WorkShopDev
 </h3>
-<p> Projeto criado com node.js, JavaScript, Nunjucks, Banco de dados: Sqlite.
 
+<h3 align="center">
+Projeto criado com node.js, JavaScript, Nunjucks, Banco de dados: Sqlite.
+</h3>
 <blockquote align="center">“Sua única limitação é você mesmo”!</blockquote>
 
 <p align="center">
